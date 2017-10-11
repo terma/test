@@ -2,8 +2,12 @@
 
 node {
   def scmVars = checkout scm
-  stage('Example') {
-    //sh 'printenv'
+  
+  stage('Printenv') {
+    sh 'printenv'
+  }
+  
+  stage('ScmVars') {
     echo scmVars
   }
 }
