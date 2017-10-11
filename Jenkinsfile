@@ -1,4 +1,4 @@
 node {
-  sh 'printenv'
+  bat 'printenv'
   checkout scm
 }
