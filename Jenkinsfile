@@ -1,5 +1,5 @@
 node {
   checkout scm
   sh 'printenv'
-  echo 12
+  echo env
 }
