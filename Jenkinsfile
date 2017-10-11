@@ -1,1 +1,2 @@
+sh 'printenv'
 checkout scm
