@@ -1,10 +1,9 @@
 #!/usr/bin/env groovy
 
 node {
-  checkout scm
-  
-        stage('Example') {
-                sh 'printenv'
-                echo scm.toString()
-        }
+  def scmVars = checkout scm
+  stage('Example') {
+    //sh 'printenv'
+    echo scmVars
+  }
 }
