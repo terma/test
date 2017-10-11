@@ -2,6 +2,13 @@
 
 node {
   checkout scm
-  sh 'printenv'
-  echo scm.toString()
+  
+  stages { 
+        stage('Example') {
+            steps {
+                sh 'printenv'
+                echo scm.toString()
+            }
+        }
+    }
 }
