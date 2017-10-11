@@ -1,2 +1,4 @@
-sh 'printenv'
-checkout scm
+node {
+  sh 'printenv'
+  checkout scm
+}
