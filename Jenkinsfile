@@ -3,4 +3,5 @@
 node {
   checkout scm
   sh 'printenv'
+  echo scm
 }
